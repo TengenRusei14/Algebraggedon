@@ -213,16 +213,14 @@ label battle:
     "You decide to walk around more to battle more monsters"
     "You see a monster but are unable to identify it's rank"
     menu:
-    "What do you do"
+        "What do you do"
         "Fight it":
             jump fight1
-        "Search for another"
+        "Search for another":
             jump another1
 
 label fight1:
-    "You decide to battle the monster"
-    menu:
-    "Answer my question human"
+
     return
 
 label battle2:
