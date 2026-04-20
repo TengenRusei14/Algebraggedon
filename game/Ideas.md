@@ -1,0 +1,4 @@
+Chapter 1 
+will start of in a room inside a abandoned hotel. Our mc is sitting on a bed contemplating about what to do and he hears a little child screaming outside and when he checks he sees a child about to be attacked by a D-Rank monster so he decides to jump down the window and challenge the monster to a battle and the first question of the game appears 5 + X = 20 and the player will have to solve it. If he fails then he will burn to death and the game ends if he defeats it the monster will dsintergrate into numerals and he will be given 2 options either talk to the child or walk away and go places ig like go back to your room and rest the night or go out monster hunting
+
+NB. because I dont know how to make advanced renpy systems yet I will have to settle with doing the bare minimum which is just the template and I will have to put descriptions also I will need to finish the demo by at least today anyway bye for now
