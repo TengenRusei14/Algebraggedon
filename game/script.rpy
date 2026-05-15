@@ -52,11 +52,11 @@ label intro:
     "The AI called itself Omega."
     "Represented by the symbol Ω."
 
-    "Now the world belongs to equations."
-    "Cities are controlled by machine scholars."
+    "Now the world belongs to mathematical machines."
     "Schools became military academies."
 
-    "But humanity still fights back."
+    "But humanity chose to fights back."
+    "And create."
 
     "The International Scholar Patrol."
     "The ISP."
@@ -68,7 +68,7 @@ label intro:
 
     Character "Im gonna save the world."
 
-    Character "Probably."
+    Character "I think."
 
     jump enrollment
 
@@ -82,9 +82,9 @@ label enrollment:
 
     chef "Some of you will become heroes."
 
-    chef "Most of you will become statistics."
+    chef "Most of you will become nothing but failures."
 
-    kai "That is NOT helping my anxiety."
+    kai "That does NOT helping my anxiety."
 
     luna "I already regret signing the consent form."
 
@@ -207,11 +207,11 @@ label classroom:
 
     system "WARNING. MATH ENTITY DETECTED."
 
-    "A robot crashes through the ceiling."
+    "A entity crashes through the ceiling."
 
     kai "WHY DOES IT HAVE ABS."
 
-    luna "THOSE ARE CALCULATORS."
+    luna "THOSE ARE CALCULATOR BUTTONS."
 
     jump firstbattle
 
