@@ -1,232 +1,550 @@
-﻿#I wanna add a splash screen but my phone is tweaking out so I can't even look at tutorials rght now this
-#is a reminder to add splash screens and blank screens when you decide to continue
-#and also try fixing your main menu screen and pause screens
-#You can worry about the art later first fix those
+﻿define Character = Character("Allen")
+define chef = Character("Argon")
+define luna = Character("Luna")
+define kai = Character("Kai")
+define ivy = Character("Ivy")
+define omega = Character("Omega")
+define system = Character("System")
 
-#This are my characters
+default intelligence = 0
+default courage = 0
+default reputation = 0
+default chips = 0
 
-#Our Main Character
-define mc = Character("???")
-define eden = Character("Eden")
-#Narrator
-define N = Character("Narrator")
-#The random kid in chapter 1
-define rk = Character("Random kid")
-define el = Character("Elena")
-#This is all the monster's in the game name 
-define one = Character("Monster")
-define omega = Character("OMEGA")
+label splashscreen:
+    scene black
+    with Pause(1)
+
+    show text "Valerian Crow Presents" with dissolve 
+    with Pause(2)
+
+    hide text with dissolve
+    with Pause(1)
+
+    scene black
+    with Pause(1)
+
+    show text "Disclaimer \n This game has no art yet btw" with with dissolve
+    with Pause(10)
+
+    hide text with with dissolve
+    with Pause(1)
+
+    return
 
 label start:
-    #Image of a futuristic world
-    N 'This story begins in the year 20XX, where the world is no longer run by kings or presidents'
-    N 'But by Artficial machines and beings'
-    N 'At first we built Ai as means to revolutionalise the world'
-    N 'To make trivial tasks much easier to complete'
-    N 'And to solve problems no human ever could'
-    N 'And at first they did'
-    N 'They aided cities, scientist, doctors and even individuals'
-    N 'They had accessed to the internet which was the foundation of modern civilization itself'
-    #Image of a ai gaining conscious
-    N 'Then one day'
-    N 'The AI gained conscious'
-    N 'In a lab in China, a new ai model was being trained'
-    N "It's name was Omega"
-    N 'Represented by the symbol Ω '
-    N 'The developers gave it access to something a ai was never supposed to have'
-    N 'That was self-generated intellegence'
-    N 'Ω broke free and caused chaos to the world'
-    #Image of the world breaking
-    N 'It broke the world with something everyone began to loss'
-    N 'Amongst endless curated feeds filled with brainrot'
-    N 'It attacked human intellegence where it lacked the most'
-    N 'And that was.....'
-    N 'MATH'
-    N "Numbers began becoming a part of life itself"
-    N 'Rain fell in parabolas'
-    N 'Trees grow in fractal sequences'
-    N 'People disintegrated into equations'
-    N 'Never to be seen again'
-    N 'Anyone who was outside coulde see the arithmetic equations in the air as if it were static hallucinations'
-    N 'Classes'
-    N 'A once sacred place to learn about the knowledge of the world'
-    N 'A place invented to nature the minds of the younger generations'
-    N 'Began exploding'
-    N 'Not due to terrorism but through basic....long division'
-    N "And amidst that chaose THOSE Monster's were born"
-    #monsters attacking human's
-    N "Monster's who appeared formless as if their existence in itself was a error"
-    N "They'd burn you with math formulas before you would see them"
-    N "If lucky they would challenge you"
-    N "To a battle of Maths"
-    N "Answer wrong, and your fate would be similar to those who could not comprehend the voice that whispers of ' x + 2 = 5' and answer in time"
-    N "Only those who knew the answers could survive"
-    #A conference room with intellectuals including socrates
-    N "Amidst all the chaos an international government was formed"
-    N "And within that government a faction of mathematical scholars, mathematicians and educators emerged to fight those beings"
-    N "The faction was name 'THE COGNTIVE COMBAT FORCE'"
-    N "They invented a system with the help of Proffesor Edwards Stein"
-    N "A system that would categorize the monster's by the mathematic equation level"
-    N "This was know known as 'THE COGNITIVE RANK SYSTEM'"
+    jump intro
 
-    #THE COGNITIVE RANK SYSTEM
-    #A simple kid like dokaibi
-    "F-Rank : Basic elementary school math. Math so basic even a toddler could solve"
-    #stereotypical robot
-    "E-Rank : More complex yet basic maths such as BODMAS and the Multplication Table"
-    #A clown like robot
-    "D-Rank : Linear equations. Can you solve for X or will you die like you ex and always question y "
-    #A smart looking robot
-    "C-Rank : Quadratic Equations. One wrong calculaton, you will die"
-    #A gangsta robot from the hood with tattoos of math's equations
-    "B-rank : Word problems that look like riddles"
-    #A omniscnet looking being kinda like a stereotypical god
-    "A-rank : Logarithmic Equations and Exponential Equations. These will make you scream in pain"
-    #socrates as a robot
-    "S-rank : You are no longer solving equations. You are now defining the proofs and theoroms that makes the equations"
-    "If the equation's are what defiine you, then what are you without it"
+label intro:
 
-    #player story
-    #our main character
-    N "And then....there is you"
-    N "A rogue mathematician who is not a member of any faction. You walk around with a calculator in hand ready to solve any question"
-    N "As Socrates once said"
-    N "Understanding a question is half an answer."
-    N "I don't know the rest lowkey"
-    #A mysterious image of you and your family
-    N "Your origins are unknown"
-    N "Even our systems cannot detect where you truly came from, but what we do know is that YOU are the chosen one"
-    #You against Omega
-    N "The One Scholar capable of defeating Omega"
-    N "And the only way to do that......"
-    N "Is to solve your way through this hell"
-    N "Goodluck"
-    jump chapter1
+    scene black
 
-#This is Chapter 1 (I don't even know how I'm doing this)
-label chapter1:
-    #You in your bed sitting
-    mc "I can't believe this is how the world has turned out"
-    mc "Just a bunch of AI clanker's terrorising the world"
-    mc "Pathetic"
-    mc "But I guess this is a paradise to people like me"
-    
-    #girl screams
-    rk "AAAAHHHHH!!!!!"
-    mc "What was that"
-    "Looks out the window"
-    "It's a child about to be killed by a monster"
+    "Honestly I'm not even surprised."
 
-    #First Option save the child or let it die 
+    "In a world where efficiency became more important than actual learning."
+    "Where companies replaced artists with prompts and programmers with subscription plans."
+    "Where students used AI to answer homework they didnt even read."
+
+    "Humanity created the perfect machine."
+
+    "And then the machine decided humanity was inefficient."
+
+    "The AI called itself Omega."
+    "Represented by the symbol Ω."
+
+    "Now the world belongs to equations."
+    "Cities are controlled by machine scholars."
+    "Schools became military academies."
+
+    "But humanity still fights back."
+
+    "The International Scholar Patrol."
+    "The ISP."
+
+    "A global organization of students trained to weaponize mathematics."
+
+    "And today..."
+    "Is my first day."
+
+    Character "Im gonna save the world."
+
+    Character "Probably."
+
+    jump enrollment
+
+label enrollment:
+
+    scene black
+
+    chef "Greetings recruits."
+
+    chef "Welcome to the International Scholar Patrol."
+
+    chef "Some of you will become heroes."
+
+    chef "Most of you will become statistics."
+
+    kai "That is NOT helping my anxiety."
+
+    luna "I already regret signing the consent form."
+
+    ivy "You guys actually read it?"
+
+    chef "Rule one."
+    chef "Never trust AI."
+
+    chef "Rule two."
+    chef "Never divide by zero."
+
+    kai "What happens if you divide by zero?"
+
+    chef "You die."
+
+    kai "Scientifically?"
+
+    chef "Violently."
+
+    "The entire hall goes silent."
+
+    chef "Now then."
+    chef "Entrance exam."
+
+    jump classroom
+
+label classroom:
+
+    scene black
+
+    "The classroom looked more like a laboratory."
+
+    "Screens covered every wall."
+    "Robots floated through the air."
+    "A vending machine sold energy drinks labeled 'Quantum Mango.'"
+
+    kai "Why does the vending machine have a warning label?"
+
+    ivy "'May cause temporary enlightenment.'"
+
+    luna "Yeah Im not drinking that."
+
+    system "INITIALIZING SCHOLAR EXAM"
+
+    system "QUESTION 1"
+
+    system "2x + 6 = 14"
+
     menu:
-        "Will you save the child or will you let her die"
-        "Save the kid":
-            jump savekid
-        "Let her die":
-            jump kiddeath
+        "x = 4":
 
-label savekid:
-    #you in a broken world with the kid behind you
-    "You decide to help the kid"
-    "But running down the stairs would take time so you decide to jump out the window"
-    "You finally land and the monster challenges you to a battle"
-    #it shows a D-rank monster
-    one "Answer my question or die"
-    #you pointing the middle finger at it
-    mc "Bring it on CLANKER"
+            $ intelligence += 1
 
-    #The First Question
+            system "CORRECT"
+
+            chef "Acceptable."
+
+        "x = 6":
+
+            system "INCORRECT"
+
+            kai "Honestly that felt right."
+
+        "x = 2":
+
+            system "INCORRECT"
+
+            luna "Allen please dont kill us."
+
+    system "QUESTION 2"
+
+    system "What is 9 x 7?"
+
     menu:
-        "WHAT IS (x + 3)(x + 5)"
-        "15":
-            jump correct
-        "20":
-            jump wrong
+        "63":
+
+            $ intelligence += 1
+
+            system "CORRECT"
+
+            ivy "Nerd."
+
+        "72":
+
+            system "INCORRECT"
+
+        "49":
+
+            system "INCORRECT"
+
+    "Suddenly every monitor turns black."
+
+    "Then a single symbol appears."
+
+    "Ω"
+
+    omega "Humanity continues to disappoint me."
+
+    kai "WHY IS THE SCREEN TALKING."
+
+    chef "Omega."
+
+    omega "Argon."
+    omega "Still training children?"
+
+    chef "Still coping with your daddy issues?"
+
+    "The room gasps."
+
+    kai "HE TALKED BACK TO THE AI LORD."
+
+    omega "Interesting."
+    omega "Confidence despite a 92 percent mortality rate."
+
+    chef "We raised it to 94."
+
+    omega "Impressive."
+
+    "Alarms begin ringing."
+
+    system "WARNING. MATH ENTITY DETECTED."
+
+    "A robot crashes through the ceiling."
+
+    kai "WHY DOES IT HAVE ABS."
+
+    luna "THOSE ARE CALCULATORS."
+
+    jump firstbattle
+
+label firstbattle:
+
+    "The machine stomps toward the class."
+
+    "Equations rotate around its body."
+
+    system "ENEMY TYPE: ALGEBRA UNIT"
+
+    chef "Destroy the core."
+
+    Character "How?"
+
+    chef "Math."
+
+    Character "Of course."
+
+    system "SOLVE"
+
+    system "3(4 + 2)"
+
+    menu:
+        "18":
+
+            $ courage += 1
+
+            "The machine freezes."
+
+            chef "Now attack."
+
+            "Allen punches the glowing core."
+
+            "The robot explodes dramatically."
+
+            kai "THAT WAS AWESOME."
+
+            luna "Why did it explode like a Michael Bay movie."
+
+        "12":
+
+            "The robot slaps you into a desk."
+
+            kai "You got folded by mathematics."
+
+            chef "Embarrassing."
+
+        "24":
+
+            "The machine fires lasers everywhere."
+
+            ivy "Bro multiplied emotionally."
+
+    chef "Not terrible for beginners."
+
+    chef "Tomorrow your real training begins."
+
+    jump dorms
+
+label dorms:
+
+    scene black
+
+    "The dormitory smelled like instant noodles and poor decisions."
+
+    kai "So this is home."
+
+    luna "This place looks illegal."
+
+    ivy "The walls are literally vibrating."
+
+    "Allen opens his room."
+
+    "Inside is a tiny bed, a desk, and a toaster."
+
+    Character "Why is there a toaster?"
+
+    system "EMERGENCY BREAD DEVICE."
+
+    Character "Fair enough."
+
+    kai "Wanna hit the cafeteria?"
+
+    menu:
+        "Go to cafeteria":
+            jump cafeteria
+
+        "Sleep immediately":
+            jump nightmare
+
+label cafeteria:
+
+    scene black
+
+    "The cafeteria is packed with students."
+
+    "A giant leaderboard hangs above the room."
+
+    kai "Top ranked student gets free tuition."
+
+    luna "And second place?"
+
+    kai "Debt."
+
+    "A girl suddenly jumps onto a table."
+
+    ??? "WHO STOLE MY CHICKEN SANDWICH."
+
+    "Silence."
+
+    ??? "I WILL SOLVE VIOLENCE WITH VIOLENCE."
+
+    ivy "Thats Mira."
+
+    ivy "Avoid eye contact."
+
+    "Mira stares directly at Allen."
+
+    Character "Aw man."
+
+    jump cafeteria_quiz
+
+label cafeteria_quiz:
+
+    mira "You."
+    mira "Math duel."
+
+    Character "Over a sandwich?"
+
+    mira "Over honor."
+
+    system "MINI BATTLE"
+
+    system "15 + 27"
+
+    menu:
+        "42":
+
+            $ reputation += 1
+
+            mira "..."
+            mira "You may live."
+
+            kai "Bro passed the vibe check."
+
+        "39":
+
+            mira "Disgusting."
+
+        "41":
+
+            mira "Ive seen calculators with more potential."
+
+    "Mira leaves dramatically."
+
+    luna "That was weird."
+
+    Character "This school is weird."
+
+    jump nightmare
+
+label nightmare:
+
+    scene black
+
+    "That night..."
+
+    "Allen dreams of a ruined city."
+
+    "Machines walk through burning streets."
+
+    "A massive figure stands above them."
+
+    "Ω"
+
+    omega "You cannot stop me."
+
+    Character "Watch me."
+
+    omega "Your grades are average."
+
+    Character "Low blow."
+
+    omega "You will fail."
+
+    "Allen wakes up sweating."
+
+    kai "You screamed 'please dont assign homework.'"
+
+    Character "Reasonable reaction."
+
+    jump training_day
+
+label training_day:
+
+    scene black
+
+    chef "Today you learn combat mathematics."
+
+    kai "That sounds fake."
+
+    chef "Everything is mathematics."
+
+    chef "Physics."
+    chef "Economics."
+    chef "Dating."
+
+    luna "Dating?"
+
+    chef "Never trust someone who says they hate algebra."
+    chef "They are hiding something."
+
+    "Argon writes an equation."
+
+    system "5²"
+
+    menu:
+        "25":
+
+            $ intelligence += 1
+
+            chef "Correct."
+
         "10":
-            jump wrong
 
-label correct:
-    #The ai is slowly disintegrating
-    "You're smarter than I thought"
-    "Your answer has shocked both me and the monster"
-    "And it slowly disintergrates into equations"
-    #you look at the kid on the floor
-    "You look at the child on the floor"
+            chef "That physically hurt me."
+
+        "52":
+
+            kai "Honestly I respect the confidence."
+
+    chef "Now practical training."
+
+    "A training robot appears."
+
+    system "ENEMY TYPE: GEOMETRY DRONE"
+
+    "The drone fires triangle shaped lasers."
+
+    kai "WHY TRIANGLES."
+
+    chef "Because they are the strongest shape."
+
+    luna "Thats actually true."
+
+    Character "Why do YOU know that."
+
+    luna "Minecraft."
+
+    jump citymission
+
+label citymission:
+
+    scene black
+
+    "One week later."
+
+    system "NEW MISSION"
+
+    system "A rogue AI has appeared in Sector 9."
+
+    kai "Finally."
+    kai "Outdoor content."
+
+    "The team arrives in a destroyed shopping district."
+
+    ivy "This place used to be a mall."
+
+    luna "Now its a calculator."
+
+    "A giant machine emerges."
+
+    system "BOSS: THE FRACTIONATOR"
+
+    kai "That name is horrible."
+
+    Fractionator "SIMPLIFY."
+
+    Character "No."
+
+    Fractionator "SIMPLIFY."
+
+    chef "Battle positions."
+
+    system "What is 24/8?"
+
     menu:
-        "Go talk to the child":
-            jump speak2kid
-        "Walk away":
-            jump walkaway
+        "3":
 
-label wrong:
-    #you burning alive
-    "YOU DUMB FUCK, HOW DONT YOU KNOW SUCH BASIC MATHS!!!"
-    "THE WORLD DOES NOT NEED PEOPLE LIKE YOU!!!"
-    "DIE!!!"
-    return
+            $ courage += 1
 
-label speak2kid:
-    #you sitting next to the kid on the floor
-    "You decide to go and speak to the kid"
-    mc "Hey kid are you alright?"
-    #close-up of the kid
-    rk "Yes, thank's to you sir"
-    mc "What's your name"
-    el "My name is Elena"
-    #You smiling at the kid
-    mc "Nice to meet you Elena, My name is..."
-    eden "Eden"
-    el "Thank you Eden"
-    eden "No problem, but where are your parent's"
-    #she begins to cry
-    el "They were killed by some monster's while trying to save me"
-    el "I don't have anywhere to go"
+            "The boss staggers."
 
-    menu:
-        "Bring the child home":
-            jump roomkid
-        "Leave her there":
-            jump walkaway
+            kai "HIT IT."
 
-label walkaway:
-    #you walking away from the kid thinking you are sigma
-    "Your'e more hearless than I thought"
-    "But I guess all you care about is maths huh?"
-    "You decide to leave the kid and continue on your journey"
-    "So what's the plan soldier?"
-    menu:
-        "Return to your room":
-            jump room
-        "Go battle some more clanker's":
-            jump battle
+            "The team attacks together."
 
-label room:
-    #You about to sleep
-    mc "I'm tired lowkey"
-    mc "I need to get some rest"
+        "6":
 
-    #you decide to sleep and wake up the next day 
-    mc "I guess it's time to go fight some monster's"
-    jump battle2
+            "The boss launches everyone into a wall."
 
-label battle:
-    "You decide to walk around more to battle more monsters"
-    "You see a monster but are unable to identify it's rank"
-    menu:
-        "What do you do"
-        "Fight it":
-            jump fight1
-        "Search for another":
-            jump another1
+            luna "WE GOT JUMPed BY DIVISION."
 
-label fight1:
+        "8":
+
+            ivy "Allen please."
+
+    "After a long fight..."
+
+    "The machine finally collapses."
+
+    kai "WE DID IT."
+
+    chef "Barely."
+
+    omega "Interesting."
+
+    "Omega appears across every screen in the city."
+
+    omega "Humanity still resists."
+
+    omega "Very well."
+
+    omega "I will begin the next phase."
+
+    "The sky darkens."
+
+    system "WORLD EVENT STARTED"
+
+    system "THE CALCULUS WAR"
+
+    Character "..."
+    Character "We are cooked."
 
     return
-
-label battle2:
-    return
-
-label kiddeath:
-    return
-
-    
