@@ -1,10 +1,13 @@
-﻿define Character = Character("Allen")
+﻿define mc = Character("Allen")
 define chef = Character("Argon")
 define luna = Character("Luna")
 define kai = Character("Kai")
 define ivy = Character("Ivy")
 define omega = Character("Omega")
 define system = Character("System")
+define r = Character("Random Girl") 
+define mira = Character("Mira")
+define Fractionator = Character("FRACTIONATOR")
 
 default intelligence = 0
 default courage = 0
@@ -24,10 +27,10 @@ label splashscreen:
     scene black
     with Pause(1)
 
-    show text "Disclaimer \n This game has no art yet btw" with with dissolve
+    show text "Disclaimer \n This game has no art yet btw" with dissolve
     with Pause(10)
 
-    hide text with with dissolve
+    hide text with dissolve
     with Pause(1)
 
     return
@@ -66,9 +69,9 @@ label intro:
     "And today..."
     "Is my first day."
 
-    Character "Im gonna save the world."
+    mc "Im gonna save the world."
 
-    Character "I think."
+    mc "I think."
 
     jump enrollment
 
@@ -225,11 +228,11 @@ label firstbattle:
 
     chef "Destroy the core."
 
-    Character "How?"
+    mc "How?"
 
     chef "Math."
 
-    Character "Of course."
+    mc "Of course."
 
     system "SOLVE"
 
@@ -288,11 +291,11 @@ label dorms:
 
     "Inside is a tiny bed, a desk, and a toaster."
 
-    Character "Why is there a toaster?"
+    mc "Why is there a toaster?"
 
     system "EMERGENCY BREAD DEVICE."
 
-    Character "Fair enough."
+    mc "Fair enough."
 
     kai "Wanna hit the cafeteria?"
 
@@ -319,11 +322,11 @@ label cafeteria:
 
     "A girl suddenly jumps onto a table."
 
-    ??? "WHO STOLE MY CHICKEN SANDWICH."
+    r "WHO STOLE MY CHICKEN SANDWICH."
 
     "Silence."
 
-    ??? "I WILL SOLVE VIOLENCE WITH VIOLENCE."
+    r "I WILL SOLVE VIOLENCE WITH VIOLENCE."
 
     ivy "Thats Mira."
 
@@ -331,7 +334,7 @@ label cafeteria:
 
     "Mira stares directly at Allen."
 
-    Character "Aw man."
+    mc "Aw man."
 
     jump cafeteria_quiz
 
@@ -340,7 +343,7 @@ label cafeteria_quiz:
     mira "You."
     mira "Math duel."
 
-    Character "Over a sandwich?"
+    mc "Over a sandwich?"
 
     mira "Over honor."
 
@@ -370,7 +373,7 @@ label cafeteria_quiz:
 
     luna "That was weird."
 
-    Character "This school is weird."
+    mc "This school is weird."
 
     jump nightmare
 
@@ -390,11 +393,11 @@ label nightmare:
 
     omega "You cannot stop me."
 
-    Character "Watch me."
+    mc "Watch me."
 
     omega "Your grades are average."
 
-    Character "Low blow."
+    mc "Low blow."
 
     omega "You will fail."
 
@@ -402,7 +405,7 @@ label nightmare:
 
     kai "You screamed 'please dont assign homework.'"
 
-    Character "Reasonable reaction."
+    mc "Reasonable reaction."
 
     jump training_day
 
@@ -458,7 +461,7 @@ label training_day:
 
     luna "Thats actually true."
 
-    Character "Why do YOU know that."
+    mc "Why do YOU know that."
 
     luna "Minecraft."
 
@@ -491,7 +494,7 @@ label citymission:
 
     Fractionator "SIMPLIFY."
 
-    Character "No."
+    mc "No."
 
     Fractionator "SIMPLIFY."
 
@@ -544,7 +547,7 @@ label citymission:
 
     system "THE CALCULUS WAR"
 
-    Character "..."
-    Character "We are cooked."
+    mc "..."
+    mc "We are cooked."
 
     return
