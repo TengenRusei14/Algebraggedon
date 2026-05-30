@@ -4,6 +4,8 @@ define kai = Character("Kai")
 define luna = Character("Luna")
 define r = Character("Rashim")
 
+define money = 1000
+
 default unimarks = 0
 default nasatest = 0
 
@@ -171,16 +173,16 @@ label library:
     "Something loud"
     "You look up and see......"
     "A truck"
-
-    scene "#ff0000"
+    scene black
 
     show text "You Died" with dissolve
     with Pause(3)
+
     jump xeno
 
 label xeno:
     "You wake up in a strange place, you have no idea where you are"
-        menu:
+    menu:
         "WHAT DO YOU WISH TO DO?"
         "Quit":
             return
@@ -222,7 +224,11 @@ label m:
 
 label n:
     r "Welcome in"
-    # falls through to home
+    r "Please follow me to the gaming area"
+    "You follow Rashim to the gaming area and you see a lot of people playing blackjack"
+    r "Please take a seat and I will deal you in"
+    "You take a seat and start playing blackjack"
+    "You play a round of black jack and decide to return home"
 
 label home:
 
