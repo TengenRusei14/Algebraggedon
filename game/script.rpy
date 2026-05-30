@@ -4,7 +4,16 @@ define kai = Character("Kai")
 define luna = Character("Luna")
 define r = Character("Rashim")
 
-define money = 1000
+image bg class = "class.png"
+image bg downtown = "Downtown 1 Day.png"
+image bg park = "Park 1 Day.png"
+image bg room = "room.png"
+image bg sky_day = "Sky Day.png"
+image bg sky_afternoon = "Sky Afternoon Day.png"
+image bg sky_night = "Sky Night Day.png"
+
+image kai_img = "kai.png"
+image luna_img = "luna.png"
 
 default unimarks = 0
 default nasatest = 0
@@ -22,6 +31,8 @@ label splashscreen:
     return
 
 label start:
+
+    scene bg class
 
     $ povname = renpy.input("What's your name?", length=32)
     $ povname = povname.strip()
@@ -137,6 +148,10 @@ label start:
         "Go out of class":
             pass
 
+    scene bg downtown
+    show kai_img at left
+    show luna_img at right
+
     "As I step out of the class, I see my friends waiting for me outside"
     "Honestly, I do not know what I'd be without them"
 
@@ -156,6 +171,9 @@ label start:
             jump home 
 
 label library:
+    scene bg downtown
+    show kai_img at left
+    show luna_img at right
     mc "I have a suggestion, why don't we head to the the public library and study"
     kai "Yeah no that sounds boring, bye"
     luna "I agree with you Kai, I don't wanna go to the library, let's go somewhere else"
@@ -165,6 +183,10 @@ label library:
     menu:
         "Go to library":
             pass
+
+    hide kai_img
+    hide luna_img
+    scene bg park
 
     mc "Well I guess I can go and practice with the new set of maths questions from the Weekly Math's Jump"
     "You begin walking to the library with a pen and paper in hand, trying to solve an equation"
@@ -191,6 +213,9 @@ label xeno:
 
 
 label casino:
+    scene bg downtown
+    show kai_img at left
+    show luna_img at right
     mc "Why not the casino?"
     kai "Now we talking"
     luna "Is it not just probability to you [povname]"
@@ -232,20 +257,32 @@ label n:
 
 label home:
 
+    scene bg downtown
+    show kai_img at left
+    show luna_img at right
+
     mc "Sorry guys but I have to go home and prepare for my internship tomorrow"
     kai "Ok bye"
     luna "Goodluck, bye [povname]"
     mc "Thank you both"
 
+    hide kai_img
+    hide luna_img
+    scene bg room
+
     "You return to your small apartment"
 
     menu:
         "sleep":
+            scene bg sky_night
             "You decide to fall asleep"
             "And wake up the next day"
+            scene bg sky_day
 
     mc "I'm guessing I slept the whole night"
     mc "I should go to school the proffesor is announcing our marks today"
+
+    scene bg class
 
     "You decide to quickly run to school and sit down right before the professor starts to speak"
 
@@ -265,6 +302,8 @@ label home:
 
 label congrats:
 
+    scene bg class
+
     prof "Congratulations [povname], you did an amazing job, you got [unimarks] out of 10, that's a great mark"
     mc "Thank you professor, I'm really happy with my mark"
     prof "You should be, you worked really hard for this mark, I'm really proud of you"
@@ -273,6 +312,9 @@ label congrats:
     prof "You will be working with some of the best scientists in the world, and you will be doing some really cool stuff, I'm really excited for you"
     mc "Wow, that's amazing news, I'm really excited for this opportunity, thank you professor"
     prof "You're welcome, I'm really happy for you, you deserve this opportunity, I'm sure you will do great things in the future, I'm really proud of you"
+
+    show kai_img at left
+    show luna_img at center
 
     "Luna and Kai walk in"
 
@@ -745,6 +787,8 @@ label congrats:
     return
 
 label fail:
+    scene bg class
+
     prof "Unfortunately, you didn't pass. Better luck next time."
     return
 
@@ -757,6 +801,8 @@ label fail2:
 
 
 label chapter1:
+
+    scene bg room
 
     "You wake up from the strange dream..."
 
