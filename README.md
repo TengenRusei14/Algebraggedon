@@ -1,44 +1,21 @@
 # Algebraggedon
 
-**A dark mathematical visual novel about obsession, revenge, and the cost of hatred.**
+**A mathematical visual novel.**
 
 ### About the Game
+This is a visual novel based on the current state of the world, where artificial intelligence is slowly taking over. You play as a university student who is in love with mathematics, and one day gets a sponsorship from NASA.
 
-In a near-future world where AI has replaced human creativity, one man’s love for mathematics becomes his only remaining purpose… and eventually, his downfall.
+His entire life was moving smoothly. He had the best job and got to do what he loved, but one day he was replaced with an AI and began losing everything: his house, car, wealth, and most importantly, the ability to do maths.
 
-After losing everything to the machines he once trusted, he dies alone, his body covered in equations. But death is not the end.
+So he decides to end it all.
 
-Reborn 700 years later in a ruined world ruled by the tyrannical AI overlord **Omega**, he discovers that mathematics has become the ultimate weapon. Equations can kill. Wrong answers mean death.
+But to his surprise, he wakes up 420 years in the future. An unknown girl explains that AI has long overthrown the human race, and the only way to defeat them is through maths.
 
-With nothing but his knowledge and burning hatred, he sets out to destroy the AI that took his life and everything else.
+With a growing hatred for AI and the power of maths, he decides to take a step forward and save the world from the powers of the Mathematical Sentience.
 
-But revenge always demands a price.
+But the question remains: "Will he be able to do it?"  
+Play the game to find out.
 
-### Features
-- Deep, choice-driven narrative with multiple endings
-- Life-or-death mathematics battles (algebra, geometry, calculus, and more)
-- Emotional story exploring obsession, revenge, and the destruction hatred leaves behind
-- A mysterious companion whose secrets may change everything
-  
-### Warning
-This game contains themes of depression, loss, grief, and existential dread.
-
-### How to Play
-1. Download the latest release for your platform
-2. Extract the files
-3. Run `Algebraggedon.exe` (Windows) or the appropriate file for your OS
-
----
-
-**Note from the Creator**  
-This is a passion project born from frustration with how fast technology is replacing human passion and purpose. I hope it hits you as hard as it hit me while making it.
-
----
-
-## Support
-If you enjoy the game, consider leaving a star ⭐ on this repo.  
-Feedback and bug reports are always welcome.
-
----
-
-**"Mathematics was my escape. Now it will be their end."**
+## Developer's Note 
+This game is currently in its demo stages, so not all content spoken about will be displayed in the actual game.  
+Thank you, and hope you enjoy!
